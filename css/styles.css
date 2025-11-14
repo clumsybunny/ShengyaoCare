@@ -1,0 +1,488 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top:  -9999px;
+    visibility: hidden;
+}
+
+/* Variables */
+:root { 
+    /* Colors */
+  --yellow: #F9E594;
+  --dark-yellow: #F0CF4B;
+  --brown: #1B1209;
+  --white: #FFFFFF;
+  --black: #000000;
+    /* Typography */
+  --font-inria: "Inria Serif", serif;
+  --font-instrument: "Instrument Sans", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --h2-base: 14px;
+  --p-base: 12px;
+}
+
+/* Typography */
+/* Fonts */
+.font-inria {
+    font-family: var(--font-inria);
+}
+
+.font-instrument {
+  font-family: var(--font-instrument);
+}
+
+.font-ubuntu {
+  font-family: var(--font-ubuntu);
+}
+
+/* Weights */
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+/* Sizes */
+.size-h2 {
+    font-size: var(--h2-base);
+}
+
+.size-p {
+    font-size: var(--p-base);
+}
+
+/* Color */
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+/* Spacing */
+h2 {
+    padding: 0.5rem 0;
+}
+
+.btn {
+    margin: 1rem 0;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+/* Utility */
+.flexed {
+    display: flex;
+}
+
+.right-arrow {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.img-container {
+    display: flex;
+}
+
+.centered {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+/* Components */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    border: 0px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/* Sections*/
+/* Header */
+header {
+    background-color: var(--white);
+}
+
+nav.flexed {
+    border-bottom: 1px solid var(--black);
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-id h2 a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--font-inria);
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--yellow);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu.expanded {
+    display: flex;
+}
+
+.menu li {
+    padding: 0.25rem 1rem;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--font-instrument);
+    font-weight: 600;
+}
+
+/* Slogan */
+.slogan {
+    position: relative;
+}
+
+.slogan .veil {
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    inset: 0 0 0 1rem;
+    width: 40vw;
+    padding: 0 1rem;
+}
+
+span {
+    color: var(--yellow);
+}
+
+/* Introduction */
+.introduction {
+    background: var(--yellow);
+    padding: 0 1rem;
+}
+
+.introduction .btn {
+    background: var(--dark-yellow);
+}
+
+/* mission */
+.mission {
+    position: relative;
+}
+
+.mission .veil {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+/* Services */
+.services {
+    background: var(--brown);
+    padding: 0 1rem;
+}
+
+.services section {
+    flex-direction: column;
+}
+
+.services .img-container {
+    height: 12rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.services .img-container img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Email Form */
+.form {
+    background: var(--brown);
+    padding: 1rem;
+}
+
+.form > div, .form > section {
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.form section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form button {
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    align-self: center;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    padding: 0 1rem;
+    background: var(--black);
+}
+
+footer .btn {
+    background-color: var(--white);
+}
+
+/* Media Queries */
+@media (min-width: 479px) {
+    :root {
+        --h2-base: 18px;
+        --p-base: 16px;
+    }
+
+    /* Header */
+    .site-id h2 a {
+        font-size: 20px;
+    }
+
+    nav.flexed {
+        padding: 0 2rem;
+    }
+
+    .menu li {
+        padding: 0.25rem 2rem;
+    }
+
+    /* Slogan */
+    .slogan .veil {
+        inset: 0 0 0 2rem;
+    }
+
+    /* Introduction */
+    .introduction {
+        padding: 0 2rem;
+    }
+
+    /* Mission */
+    .mission .veil {
+        right: 2rem;
+    }
+
+    /* Services */
+    .services {
+        padding: 0 2rem;
+    }
+
+    .services .img-container {
+        height: 24rem;
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    /* Form */
+    .form {
+        background: var(--brown);
+        padding: 1rem 2rem;
+    }
+
+    .form > div, .form > section {
+        padding: 2rem;
+    }
+
+    .row {
+        margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 767px) {
+    :root {
+        --h2-base: 22px;
+        --p-base: 18px;
+    }
+
+    /* Header */
+    .site-id h2 a {
+        font-size: 26px;
+    }
+
+    nav.flexed {
+        padding: 0 3rem;
+    }
+
+    .menu li {
+        padding: 0.25rem 3rem;
+    }
+
+    /* Slogan */
+    .slogan .veil {
+        inset: 0 0 0 3rem;
+    }
+
+    /* Introduction */
+    .introduction {
+        padding: 0 3rem;
+    }
+
+    /* Mission */
+    .mission .veil {
+        right: 3rem;
+    }
+
+    /* Services */
+    .services {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .services .img-container {
+        height: auto;
+        width: 40vw;
+        padding: 0rem;
+        margin: 0;
+        margin: 3rem 0;
+    }
+
+    .services section {
+        width: 40vw;
+    }
+
+    /* Form */
+    .form {
+        background: var(--brown);
+        padding: 1rem 20vw;
+    }
+
+    .row {
+        margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0 3rem;
+    }
+}
+
+@media (min-width: 1279px) {
+    :root {
+        --h2-base: 42px;
+        --p-base: 28px;
+    }
+
+    /* Header */
+    .site-id h2 a {
+        font-size: 56px;
+    }
+
+    nav.flexed {
+        padding: 0 3rem;
+    }
+
+    .menu li {
+        padding: 0.25rem 3rem;
+    }
+
+    /* Slogan */
+    .slogan .veil {
+        inset: 0 0 0 3rem;
+    }
+
+    /* Introduction */
+    .introduction {
+        padding: 0 3rem;
+    }
+
+    /* Mission */
+    .mission .veil {
+        right: 3rem;
+    }
+
+    /* Services */
+    .services {
+        padding: 0 3rem;
+    }
+
+    /* Form */
+    .form {
+        background: var(--brown);
+        padding: 1rem 30vw;
+    }
+
+    .row {
+        margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0 3rem;
+    }
+}
+
