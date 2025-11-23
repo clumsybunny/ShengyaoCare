@@ -284,6 +284,24 @@ span {
     margin-top: 0.5rem;
 }
 
+/* Attributions */
+.attributions {
+    background: var(--brown);
+    padding: 1rem;
+}
+
+.attributions section {
+    background: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.attributions ul {
+    flex-direction: column;
+    gap: 1rem;
+}
+
 /* Footer */
 footer {
     padding: 0 1rem;
@@ -352,6 +370,19 @@ footer .btn {
 
     .row {
         margin-bottom: 1rem;
+    }
+
+    /* Attributions */
+    .attributions {
+        padding: 1rem 2rem;
+    }
+
+    .attributions section {
+        padding: 2rem;
+    }
+
+    .attributions ul {
+        gap: 1rem;
     }
 
     /* Footer */
@@ -425,6 +456,20 @@ footer .btn {
         margin-bottom: 1rem;
     }
 
+    /* Attributions */
+    .attributions {
+        padding: 1rem 20vw;
+    }
+
+    .attributions section {
+        padding: 2rem;
+    }
+
+    .attributions ul {
+        gap: 1rem;
+    }
+
+
     /* Footer */
     footer {
         padding: 0 3rem;
@@ -478,6 +523,19 @@ footer .btn {
 
     .row {
         margin-bottom: 1rem;
+    }
+
+    /* Attributions */
+    .attributions {
+        padding: 1rem 30vw;
+    }
+
+    .attributions section {
+        padding: 2rem;
+    }
+
+    .attributions ul {
+        gap: 1rem;
     }
 
     /* Footer */
