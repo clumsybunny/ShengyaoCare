@@ -80,7 +80,7 @@ h2 {
     margin: 1rem 0;
 }
 
-ul {
+.services ul {
     margin-bottom: 1rem;
 }
 
@@ -161,10 +161,10 @@ nav.flexed {
 .menu {
     width: 100%;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding: 5rem;
+    gap: 5rem;
     display: flex;
-    background-color: var(--yellow);
+    background-color: var(--brown);
     display: none;
     flex-direction: column;
     align-items: flex-start;
